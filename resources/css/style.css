@@ -1,5 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic);
 
+@font-face {
+    font-family: 'headline';
+    src: url('../fonts/headth__-webfont.eot');
+    src: url('../fonts/headth__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/headth__-webfont.woff') format('woff'),
+         url('../fonts/headth__-webfont.ttf') format('truetype'),
+         url('../fonts/headth__-webfont.svg#headline_twohplhs') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -24,6 +35,15 @@ body > header > .container > span.title-text {
 	position: absolute;
 	font-size: 20px;
 	color: #888;
+}
+
+.headline {
+	font-family: "headline", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1.headline {
+	font-size: 50px;
+	margin: 35px 0 20px;
 }
 
 body > header > .container > span {
@@ -301,6 +321,47 @@ a.highlight:hover {
 	font-size: 14px;
 }
 
+.area {
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.area .contain {
+	float: left;
+	width: 30%;
+	color: #000;
+}
+
+.area .contain p {
+	margin: 0;
+	padding-left: 6px;
+}
+
+.area .contain .box {
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.area .contain .box.white {
+	background-color: #eee;
+}
+
+.area .contain .box.white a {
+	color: #0079c1;
+	text-decoration: none;
+}
+
+.area .contain .box.white a:hover {
+	color: #339;
+}
+
+.area .contain .box ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .boxes {
 	list-style: none;
 }
@@ -309,7 +370,7 @@ a.highlight:hover {
 	float: left;
 }
 
-.boxes .container {
+.boxes .contain {
 	width: 170px;
 	height: 110px;
 	margin: 10px;
@@ -324,6 +385,15 @@ a.highlight:hover {
 	background: linear-gradient(to bottom, #f1f1f1 0%, #f1f1f1 90%, #e8e8e8 100%);
 	border: 1px solid #d3d3d3;
 	text-align: center;
+}
+
+.boxes .container ul li {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.boxes .container ul li {
+	text-overflow: ellipsis;
 }
 
 .boxes .container span.add {
@@ -453,6 +523,7 @@ p.nextpage a:hover {
 	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	opacity:0;
+	visibility: hidden;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
@@ -463,6 +534,7 @@ p.nextpage a:hover {
 .modalDialog:target {
 	opacity:1;
 	pointer-events: auto;
+	visibility: visible;
 }
 
 .modalDialog > div {
@@ -545,6 +617,10 @@ ul.credentials .field-label {
 	color: #8b8b8b !important;
 	background: linear-gradient(to bottom, #f1f1f1 0%, #f1f1f1 90%, #e8e8e8 100%) !important;
 	border: 1px solid #d3d3d3 !important;
+}
+
+.area.blue {
+	background-color: #a4d3ee;
 }
 
 a.refund, a.capture {
