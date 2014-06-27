@@ -23,12 +23,17 @@
 				<li<?php if ($sel == "icc-i") echo " class=\"active\""; ?>><a href="icc-implement.php">Implementation</a></li>
 			</ul>
 		</li>
+		<li class="nav-title<?php if ($sel == "ipn") echo " active"; ?>"><a href="ipn.php">Instant Payment Notification</a></li>
+		<li>
+			<ul class="sub">
+				<li<?php if ($sel == "ipn-i") echo " class=\"active\""; ?>><a href="ipn-implement.php">Implementation</a></li>
+			</ul>
+		</li>
 		<li class="nav-title<?php if ($sel == "rt") echo " active"; ?>"><a href="reftrans.php">Reference Transactions</a></li>
 		<li>
 			<ul class="sub">
 				<li<?php if ($sel == "rt-i") echo " class=\"active\""; ?>><a href="reftrans-implement.php">Implementation</a></li>
 			</ul>
 		</li>
-		<li class="nav-title<?php if ($sel == "wpp") echo " active"; ?>"><a href="wpp.php">Website Payments Pro</a></li>
 	</ul>
 </div>
